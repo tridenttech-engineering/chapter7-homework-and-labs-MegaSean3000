@@ -10,5 +10,21 @@ using namespace std;
 
 int main()
 {
-    return 0;
-} //end of main function
+const double growth_rate = 0.055;
+double sales = 0.0;
+double annual_increase = 0.0;
+int years = 0;
+
+cout << "Current years sales: ";
+cin >> sales;
+
+while (sales <= 150000) {
+    annual_increase = sales * growth_rate;
+    sales = sales + annual_increase;
+    years = years + 1;
+}
+cout << fixed << setprecision(0);
+cout << "Sales " << years << " years from now: $" << sales <<endl;
+
+	return 0;
+}	//end of main function
