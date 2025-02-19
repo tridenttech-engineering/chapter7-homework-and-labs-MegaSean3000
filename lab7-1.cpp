@@ -1,5 +1,4 @@
-//Lab7-1.cpp - calculates the average number of text
-//messages sent each day for 7 days
+//hw7-16.cpp - displays three tip amounts
 //Created/revised by <your name> on <current date>
 
 #include <iostream>
@@ -7,7 +6,28 @@
 using namespace std;
 
 int main()
-{	
+{
+int day = 0;
+int totalTexts = 0;
+int dailyTexts = 0;
+double average = 0.0;
 
-    return 0;
-}   //end of main function
+for (day = 1; day < 8; day += 1){
+    cout << "How many text messages did you send on day "
+    << day << "?";
+    cin >> dailyTexts;
+    totalTexts = totalTexts + dailyTexts;
+
+}
+
+average = static_cast<double>(totalTexts) / day - 1;
+cout << fixed << setprecision(0);
+cout << endl << "You sent aproximately " << average << " text messages per day." << endl;
+
+
+
+
+
+
+	return 0;
+}	//end of main function
