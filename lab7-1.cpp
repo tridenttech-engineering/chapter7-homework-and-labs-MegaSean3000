@@ -20,7 +20,7 @@ for (day = 1; day < 8; day += 1){
 
 }
 
-average = static_cast<double>(totalTexts) / day - 1;
+average = totalTexts / (day - 1);
 cout << fixed << setprecision(0);
 cout << endl << "You sent aproximately " << average << " text messages per day." << endl;
 
