@@ -7,7 +7,29 @@
 using namespace std;
 
 int main()
-{	
+{
+int day = 1;
+int totalTexts = 0;
+int dailyTexts = 0;
+double average = 0.0;
 
-    return 0;
-}   //end of main function
+
+while (day < 8) {
+    cout << "How many text messages did you send on day "
+    << day << "?";
+    cin >> dailyTexts;
+    totalTexts = totalTexts + dailyTexts;
+    day += 1;
+}
+
+average = totalTexts / (day - 1);
+cout << fixed << setprecision(0);
+cout << endl << "You sent aproximately " << average << " text messages per day." << endl;
+
+
+
+
+
+
+	return 0;
+}	//end of main function
